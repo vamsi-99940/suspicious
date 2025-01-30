@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Link Alert</title>
+    <script>
+        function showAlert(event) {
+            event.preventDefault();  // Prevents the default action (opening the link)
+            alert("You clicked on the GitHub link!");
+            window.location.href = event.target.href;  // Navigate to the GitHub URL after the alert
+        }
+    </script>
+</head>
+<body>
+
+    <a href="https://github.com" onclick="showAlert(event)">Click here to visit GitHub</a>
+
+</body>
+</html>
